@@ -21,5 +21,16 @@ function printMe(data) {
 
 // Looking the all property of the forEach loop Array
 coding.forEach((data, index) => {
-  console.log(`Value ${data} at Index ${index}`);
+  // console.log(`Value ${data} at Index ${index}`);
+});
+
+// Array Contain Object
+const myCoding = [
+  { langName: "Javascript", langFile: "js" },
+  { langName: "Java", langFile: "jaba" },
+  { langName: "Python", langFile: "py" },
+];
+// Applying Array
+myCoding.forEach((item) => {
+  console.log(item.langFile);
 });
