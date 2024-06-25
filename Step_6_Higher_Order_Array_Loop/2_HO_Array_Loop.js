@@ -21,5 +21,9 @@ map.set("3", "Three");
 // map is not iterratable
 // Applying for-in Loop
 for (const key in map) {
-  console.log(map[key]);
+  //   console.log(map[key]);
 }
+
+// console.log(map.get("3"));
+map.delete("3");
+console.log(map.size);
