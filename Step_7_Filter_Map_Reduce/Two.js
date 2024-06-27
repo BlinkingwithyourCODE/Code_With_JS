@@ -1,3 +1,4 @@
+// Object Declaration
 const books = [
   { title: "Book One", genre: "Fiction", publish: 1981, edition: 2004 },
   { title: "Book Two", genre: "Non-Fiction", publish: 1992, edition: 2008 },
@@ -9,3 +10,9 @@ const books = [
   { title: "Book Eight", genre: "Science", publish: 2011, edition: 2016 },
   { title: "Book Nine", genre: "Non-Fiction", publish: 1981, edition: 1989 },
 ];
+
+// Filter Method
+const userData = books.filter((item) => {
+  return item.publish > 1990 && item.genre === "History";
+});
+console.log(userData);
