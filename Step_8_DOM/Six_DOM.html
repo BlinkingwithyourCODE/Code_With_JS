@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Example</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+        color: wheat;
+        background-color: #541526;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="langauge">
+      <li>HTML</li>
+    </ul>
+  </body>
+  <script>
+    function addLangaugeName(langName) {
+      // Creating the LI name
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName));
+      document.querySelector(".langauge").appendChild(li);
+    }
+    // Adding Value to the Function
+    addLangaugeName("JavaScript");
+    addLangaugeName("Java");
+    addLangaugeName("GoLang");
+    addLangaugeName("Ruby");
+
+    // EDIT
+    const changeElement = document.querySelector("li:nth-child(2)");
+    const newLi = document.createElement("li");
+    newLi.innerText = "Kafka";
+    changeElement.replaceWith(newLi);
+  </script>
+</html>
