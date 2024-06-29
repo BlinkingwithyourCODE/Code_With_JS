@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Learning</title>
+    <style>
+      * {
+        font-size: 30px;
+        color: white;
+        background-color: #212112;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="color: orangered">Langauge List :</h2>
+    <ul class="langauge"></ul>
+  </body>
+  <script>
+    function addLangaugeName(langName) {
+      // Element Creation
+      const li = document.createElement("li");
+      li.innerHTML = langName;
+      li.style.color = "orange";
+      document.querySelector(".langauge").appendChild(li);
+    }
+    addLangaugeName("JavaScript");
+    addLangaugeName("Python");
+    addLangaugeName("Java");
+    addLangaugeName("HMTL");
+    addLangaugeName("CSS");
+    addLangaugeName("GoLang");
+  </script>
+</html>
