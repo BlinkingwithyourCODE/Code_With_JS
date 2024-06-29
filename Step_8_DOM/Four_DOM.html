@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Practice</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: #212252;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body></body>
+  <script>
+    // Creating the new Element
+    const addElement = document.createElement("h1");
+    console.log(addElement);
+
+    // Setting the Attribute of the Created Element
+    addElement.id = "main-h1";
+    addElement.setAttribute("title", "Heading");
+
+    // Adding Some Styling
+    addElement.style.backgroundColor = "lightyellow";
+    addElement.style.padding = "10px";
+    addElement.style.height = "25px";
+    addElement.style.margin = '10px'
+
+    // Adding Some Mssage
+    const message = "Hello Coder! Good Morning";
+    addElement.innerHTML = message;
+
+    // Adding to the Screen
+    document.body.append(addElement);
+  </script>
+</html>
