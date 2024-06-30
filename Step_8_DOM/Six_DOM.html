@@ -37,5 +37,13 @@
     const newLi = document.createElement("li");
     newLi.innerText = "Kafka";
     changeElement.replaceWith(newLi);
+
+    // EDIT <Another Type to Replce the ELement>
+    const firstChild = document.querySelector("li:first-child");
+    firstChild.outerHTML = "<li>Python</li>";
+
+    // Remove the Element
+    const removeChild = document.querySelector("li:nth-child(3)");
+    removeChild.remove();
   </script>
 </html>
